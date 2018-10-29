@@ -51,8 +51,8 @@ function Symbol(x, y, speed, first) {
 
 function Stream() {
   this.symbols = []
-  this.totalSymbols = round(random(5, 40))
-  this.speed = random(3, 6)
+  this.totalSymbols = round(random(3, 40))
+  this.speed = random(2, 10)
 
   this.generateSymbols = function (x, y) {
     var first = round(random(0, 3)) == 1
@@ -69,7 +69,7 @@ function Stream() {
   this.render = function () {
     this.symbols.forEach(function (symbol) {
       if (symbol.first) {
-        fill(180, 200, 200)
+        fill(230, 230, 230)
       } else {
         fill(0, 240, 120)
       }
